@@ -84,7 +84,7 @@
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/gopaljha16/codexa.git
+   git clone https://github.com/xurde24/Codexa.git
    cd codexa
    ```
 
@@ -127,7 +127,7 @@ We ❤️ contributions! Here’s how to contribute:
 
 1. Fork the repository
 2. Create a feature branch
-   `git checkout -b https://github.com/gopaljha16/codexa`
+   `git checkout -b https://github.com/xurde24/codexa`
 3. Commit your changes
    `git commit -m "Add: your feature"`
 4. Push to your branch
