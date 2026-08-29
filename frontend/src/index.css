@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@plugin "daisyui";    
+
+@theme {
+  --color-brand-orange: #E56B3D;
+  --color-brand-orange-hover: #D45A2C;
+  --color-brand-dark: #110F0D;
+  --color-brand-surface: #1C1714;
+  --color-brand-border: rgba(255, 255, 255, 0.05);
+  --color-brand-text-primary: #F0EBE1;
+  --color-brand-text-secondary: #9A9386;
+}
+
+:root[data-theme="light"] {
+  --color-brand-dark: #F7F5F2; /* Soft off-white background */
+  --color-brand-surface: #FFFFFF;
+  --color-brand-border: rgba(0, 0, 0, 0.1);
+  --color-brand-text-primary: #1C1714; /* Very dark text */
+  --color-brand-text-secondary: #6B655E;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-brand-dark);
+  color: var(--color-brand-text-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.bg-ambient {
+  background-color: var(--color-brand-dark);
+  position: relative;
+  overflow: hidden;
+  color: var(--color-brand-text-primary);
+}
+
+.bg-grid {
+  display: none; /* Removed grid for cleaner minimalistic look */
+}
+
+.glass-card {
+  background-color: var(--color-brand-surface);
+  border: 1px solid var(--color-brand-border);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+
+.neo-input {
+  background-color: var(--color-brand-dark) !important;
+  border: 1px solid var(--color-brand-border) !important;
+  color: var(--color-brand-text-primary) !important;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.neo-input:focus {
+  border-color: var(--color-brand-orange) !important;
+  outline: none !important;
+}
+
+.neo-btn {
+  background-color: var(--color-brand-orange) !important;
+  color: #110F0D !important;
+  border: none !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  border-radius: 0.5rem !important;
+}
+
+.neo-btn:hover {
+  background-color: var(--color-brand-orange-hover) !important;
+  transform: translateY(-1px);
+}
+
+.neo-btn:disabled {
+  background-color: var(--color-brand-surface) !important;
+  color: var(--color-brand-text-secondary) !important;
+  cursor: not-allowed;
+  transform: none;
+}
